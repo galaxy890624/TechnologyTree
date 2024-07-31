@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +8,7 @@ public class PlayerPosition : MonoBehaviour
 {
     public TextMeshProUGUI PositionText;
     
-    [SerializeField, Header("™±Æa¶Ï∏m")]
+    [SerializeField, Header("Áé©ÂÆ∂‰ΩçÁΩÆ")]
     GameObject Player;
 
     // Start is called before the first frame update
