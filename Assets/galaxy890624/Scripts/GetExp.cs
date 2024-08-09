@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GetExp : MonoBehaviour
 {
-    public GameObject Exp;
+    Data Data;
+    GetAward GetAward;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,7 @@ public class GetExp : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            
+            Data.Exp += GetAward.GetExp;
         }
     }
     // Update is called once per frame
