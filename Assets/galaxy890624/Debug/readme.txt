@@ -1,0 +1,4 @@
+Q1
+新的C#script掛上去後,要怎麼消除綠色加號
+A1
+C#script必須添加在Prefabs物件裡面;將Hirearchy內的遊戲物件刪除後,從Prefabs內將物件重新拉進Hirearchy
