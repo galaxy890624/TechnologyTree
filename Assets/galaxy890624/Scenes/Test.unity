@@ -191,9 +191,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotKyleTest
       objectReference: {fileID: 0}
+    - target: {fileID: 4435032780808315619, guid: 4177f56a61685b6449507a1cc5360a4b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4851678385269623059, guid: 4177f56a61685b6449507a1cc5360a4b,
         type: 3}
       propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851678385269623059, guid: 4177f56a61685b6449507a1cc5360a4b,
+        type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -929,6 +939,12 @@ MonoBehaviour:
   CameraRadius: 0.2
   DampingIntoCollision: 0
   DampingFromCollision: 2
+--- !u!4 &1584221286 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7399302445438076670, guid: 4177f56a61685b6449507a1cc5360a4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 60864238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1627495590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,7 +1086,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1584221286}
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
