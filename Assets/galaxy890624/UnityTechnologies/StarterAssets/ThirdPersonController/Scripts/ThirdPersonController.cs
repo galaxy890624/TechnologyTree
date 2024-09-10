@@ -283,6 +283,7 @@ namespace StarterAssets
         {
             if (Grounded)
             {
+                print($"<color=#ff00ff><color=#00ff00>{this.gameObject.name}</color>在地上</color>");
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
 
