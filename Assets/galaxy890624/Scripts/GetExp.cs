@@ -14,7 +14,7 @@ public class GetExp : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        print($"<color=#ff00ff>我碰到了<color=#00ff00>{other.gameObject.name}</color>唷!</color>");
+        print($"<color=#ff00ff><color=#00ff00>{this.gameObject.name}</color>碰到了<color=#00ff00>{other.gameObject.name}</color>唷!</color>");
         if (other.gameObject.name == "RobotKyle")
         {
             Data.Exp += GetAward.GetExp;
