@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     float Y = 0f; // space
     float Z = 0f; // ws
 
+    [SerializeField] UnityEvent IsJump = null;
+
     // Start is called before the first frame update
     void Start()
     {
