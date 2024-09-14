@@ -45,7 +45,7 @@ public class PlayerMove : MonoBehaviour
             IsJump.Invoke();
         }
 
-        // Get keyboard direction
+        // Get keyboard input and output a direction
         float InputX = Input.GetAxisRaw("Horizontal");
         float InputZ = Input.GetAxisRaw("Vertical");
 
