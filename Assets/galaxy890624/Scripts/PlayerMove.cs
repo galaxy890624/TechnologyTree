@@ -42,10 +42,31 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && IsGround.Grounded)
         {
             Physics.velocity = new Vector3(Physics.velocity.x, JumpSpeed, Physics.velocity.z);
+            IsJump.Invoke();
         }
 
         // Get keyboard direction
-        float X = Input.GetAxisRaw("Horizontal");
-        float Z = Input.GetAxisRaw("Vertical");
+        float InputX = Input.GetAxisRaw("Horizontal");
+        float InputZ = Input.GetAxisRaw("Vertical");
+
+        // 讓WSAD進行漸變
+        // 大約花一秒的時間將ws漸變到輸入的值
+        X = Mathf.Lerp(X, InputX, Time.deltaTime * MoveAcceleration);
+        Z = Mathf.Lerp(Z, InputZ, Time.deltaTime * MoveAcceleration);
+
+        Vector3 移動向量 = new Vector3(X, 0f, Z);
+
+        // 如果我有指定方向的參照物，才需要依據這個參照物來換算
+        if (方向參照物 != null)
+        {
+            // 如果有參照物的話就將方向換算為該參照物的方向
+            移動向量 = 方向參照物.TransformDirection(移動向量);
+        }
+        else
+        {
+            // 如果沒有參照物就使用自己當作參照物來決定方向
+            移動向量 = this.transform.TransformDirection(移動向量);
+        }
+
     }
 }
