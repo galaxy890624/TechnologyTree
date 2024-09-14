@@ -20,9 +20,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float JumpSpeed = 6f; // 跳躍速度
     [SerializeField] IsGround IsGround = null;
 
-    float X = 0f; // ad
-    float Y = 0f; // space
-    float Z = 0f; // ws
+    float VelocityX = 0f; // ad
+    float VelocityY = 0f; // space
+    float VelocityZ = 0f; // ws
 
     [SerializeField] UnityEvent IsJump = null;
 
@@ -51,10 +51,10 @@ public class PlayerMove : MonoBehaviour
 
         // 讓WSAD進行漸變
         // 大約花一秒的時間將ws漸變到輸入的值
-        X = Mathf.Lerp(X, InputX, Time.deltaTime * MoveAcceleration);
-        Z = Mathf.Lerp(Z, InputZ, Time.deltaTime * MoveAcceleration);
+        VelocityX = Mathf.Lerp(VelocityX, InputX, Time.deltaTime * MoveAcceleration);
+        VelocityZ = Mathf.Lerp(VelocityZ, InputZ, Time.deltaTime * MoveAcceleration);
 
-        Vector3 移動向量 = new Vector3(X, 0f, Z);
+        Vector3 移動向量 = new Vector3(VelocityX, 0f, VelocityZ);
 
         // 如果我有指定方向的參照物，才需要依據這個參照物來換算
         if (方向參照物 != null)
@@ -68,5 +68,8 @@ public class PlayerMove : MonoBehaviour
             移動向量 = this.transform.TransformDirection(移動向量);
         }
 
+        // 為了不干涉物理引擎的重力作用所以將Y值改為原始的樣貌
+        移動向量.y = Physics.velocity.y;
+        Physics.velocity = 移動向量;
     }
 }
