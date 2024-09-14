@@ -35,6 +35,17 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Move
+
+
+        // Jump
+        if (Input.GetKeyDown(KeyCode.Space) && IsGround.Grounded)
+        {
+            Physics.velocity = new Vector3(Physics.velocity.x, JumpSpeed, Physics.velocity.z);
+        }
+
+        // Get keyboard direction
+        float X = Input.GetAxisRaw("Horizontal");
+        float Z = Input.GetAxisRaw("Vertical");
     }
 }
