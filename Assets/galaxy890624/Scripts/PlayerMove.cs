@@ -54,22 +54,22 @@ public class PlayerMove : MonoBehaviour
         VelocityX = Mathf.Lerp(VelocityX, InputX, Time.deltaTime * MoveAcceleration);
         VelocityZ = Mathf.Lerp(VelocityZ, InputZ, Time.deltaTime * MoveAcceleration);
 
-        Vector3 移動向量 = new Vector3(VelocityX, 0f, VelocityZ);
+        Vector3 MoveArray = new Vector3(VelocityX, 0f, VelocityZ); // 移動向量
 
         // 如果我有指定方向的參照物，才需要依據這個參照物來換算
         if (方向參照物 != null)
         {
             // 如果有參照物的話就將方向換算為該參照物的方向
-            移動向量 = 方向參照物.TransformDirection(移動向量);
+            MoveArray = 方向參照物.TransformDirection(MoveArray);
         }
         else
         {
             // 如果沒有參照物就使用自己當作參照物來決定方向
-            移動向量 = this.transform.TransformDirection(移動向量);
+            MoveArray = this.transform.TransformDirection(MoveArray);
         }
 
         // 為了不干涉物理引擎的重力作用所以將Y值改為原始的樣貌
-        移動向量.y = Physics.velocity.y;
-        Physics.velocity = 移動向量;
+        MoveArray.y = Physics.velocity.y;
+        Physics.velocity = MoveArray;
     }
 }
