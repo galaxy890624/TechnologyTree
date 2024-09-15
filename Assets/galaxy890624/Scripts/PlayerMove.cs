@@ -18,6 +18,7 @@ public class PlayerMove : MonoBehaviour
     // [Header("要求玩家面向某個方向")]
     // [SerializeField] LocalFace 玩家面向 = null;
     [SerializeField] float JumpSpeed = 6f; // 跳躍速度
+    [Header("IsGround裡面 要放 水平旋轉軸的物件")]
     [SerializeField] IsGround IsGround = null; // 放水平旋轉軸
 
     float VelocityX = 0f; // ad
