@@ -231,6 +231,16 @@ PrefabInstance:
       propertyPath: m_IncludeLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4895956830097754011, guid: 4177f56a61685b6449507a1cc5360a4b,
+        type: 3}
+      propertyPath: GroundLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026738710145573402, guid: 4177f56a61685b6449507a1cc5360a4b,
+        type: 3}
+      propertyPath: IsGround
+      value: 
+      objectReference: {fileID: 802049480}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -600,6 +610,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 60864238}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &802049480 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4895956830097754011, guid: 4177f56a61685b6449507a1cc5360a4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 60864238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802049471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e629ee6bffdee4ca6b906b429e1238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +986,7 @@ MonoBehaviour:
   CameraDistance: 2
   CameraCollisionFilter:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   IgnoreTag: 
   CameraRadius: 0.2
   DampingIntoCollision: 0
