@@ -15,8 +15,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float MoveAcceleration = 10f;
     [Header("根據參照物來決定自身移動方向")]
     [SerializeField] Transform 方向參照物 = null;
-    // [Header("要求玩家面向某個方向")]
-    // [SerializeField] LocalFace 玩家面向 = null;
+    [Header("要求玩家面向某個方向")]
+    [SerializeField] LocalFace 玩家面向 = null;
     [SerializeField] float JumpSpeed = 6f; // 跳躍速度
     [Header("IsGround裡面 要放 水平旋轉軸的物件")]
     [SerializeField] IsGround IsGround = null; // 放水平旋轉軸
@@ -24,6 +24,8 @@ public class PlayerMove : MonoBehaviour
     float VelocityX = 0f; // ad
     float VelocityY = 0f; // space
     float VelocityZ = 0f; // ws
+
+    // float sp = 0f; // 
 
     [Header("跳躍事件")]
     [SerializeField] UnityEvent IsJump = null; // 跳躍事件
@@ -73,5 +75,24 @@ public class PlayerMove : MonoBehaviour
         // 為了不干涉物理引擎的重力作用所以將Y值改為原始的樣貌
         MoveArray.y = Physics.velocity.y;
         Physics.velocity = MoveArray;
+
+        // 如果 WS的絕對值 + AD絕對值 > 0f
+        if (Mathf.Abs(VelocityX) + Mathf.Abs(VelocityZ) > 0.5f)
+        {
+            // 表示玩家正在移動
+            // 將動畫系統中的Move值改成true
+            // 動畫系統.SetBool("Move", true);
+            // 在移動的時候要求對齊的物件對齊
+            if (玩家面向 != null)
+                玩家面向.對齊母物件 = true;
+        }
+        else
+        {
+            // 將動畫系統中的Move值改成true
+            //動畫系統.SetBool("Move", false);
+
+            if (玩家面向 != null)
+                玩家面向.對齊母物件 = false;
+        }
     }
 }

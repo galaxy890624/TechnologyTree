@@ -45,7 +45,7 @@ namespace StarterAssets
 
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
         public float FallTimeout = 0.15f;
-        // bug
+
         [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
         public bool Grounded = true;
@@ -152,7 +152,7 @@ namespace StarterAssets
             _fallTimeoutDelta = FallTimeout;
         }
 
-        private void Update() // bug
+        private void Update()
         {
             _hasAnimator = TryGetComponent(out _animator);
 
@@ -301,7 +301,6 @@ namespace StarterAssets
                 }
 
                 // Jump
-                // Bug
                 if (_input.jump && _jumpTimeoutDelta <= 0.0f)
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
