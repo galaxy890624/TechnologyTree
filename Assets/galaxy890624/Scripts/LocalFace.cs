@@ -22,7 +22,9 @@ public class LocalFace : MonoBehaviour
     private void Update()
     {
         if (對齊母物件 == true)
+        {
             自我方向 = Quaternion.Lerp(自我方向, 我的母物件.rotation, Time.deltaTime * 對齊速度);
+        }
 
         // 自己等於自己的方向
         this.transform.rotation = 自我方向;

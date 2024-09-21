@@ -84,7 +84,9 @@ public class PlayerMove : MonoBehaviour
             // 動畫系統.SetBool("Move", true);
             // 在移動的時候要求對齊的物件對齊
             if (玩家面向 != null)
+            {
                 玩家面向.對齊母物件 = true;
+            }
         }
         else
         {
@@ -92,7 +94,9 @@ public class PlayerMove : MonoBehaviour
             //動畫系統.SetBool("Move", false);
 
             if (玩家面向 != null)
+            {
                 玩家面向.對齊母物件 = false;
+            }
         }
     }
 }
