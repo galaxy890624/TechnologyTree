@@ -9,8 +9,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] Animator Animator = null;
 
     [Header("人物的移動速度")]
-    //[Range(0f, 10f)]
-    //[SerializeField] float MoveSpeed = 2f;
+    [Range(0f, 10f)]
+    [SerializeField] float MoveSpeed = 2f;
     [Header("人物的加速度")]
     [SerializeField] float MoveAcceleration = 10f;
     [Header("根據參照物來決定自身移動方向")]
