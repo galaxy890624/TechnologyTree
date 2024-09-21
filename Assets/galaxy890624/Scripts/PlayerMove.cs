@@ -25,8 +25,6 @@ public class PlayerMove : MonoBehaviour
     float VelocityY = 0f; // space
     float VelocityZ = 0f; // ws
 
-    // float sp = 0f; // 
-
     [Header("跳躍事件")]
     [SerializeField] UnityEvent IsJump = null; // 跳躍事件
 
