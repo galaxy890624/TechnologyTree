@@ -238,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Physics: {fileID: 273413367}
   Animator: {fileID: 0}
+  MoveSpeed: 2
   MoveAcceleration: 10
   "\u65B9\u5411\u53C3\u7167\u7269": {fileID: 4277209}
   "\u73A9\u5BB6\u9762\u5411": {fileID: 841171604}
@@ -294,7 +295,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!1 &330585543
 GameObject:
