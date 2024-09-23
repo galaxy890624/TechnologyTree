@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] Rigidbody Physics = null; // player position
-    [SerializeField] Animator Animator = null;
+    //[SerializeField] Animator Animator = null;
 
     [Header("人物的移動速度")]
     [Range(0f, 10f)]
