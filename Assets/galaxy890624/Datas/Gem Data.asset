@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbe9ba6902c092a41b1af0c45dc6d8be, type: 3}
   m_Name: Gem Data
   m_EditorClassIdentifier: 
-  GetExp: 0
+  GetExp: 1

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetExp : MonoBehaviour
+public class GetGem : MonoBehaviour
 {
     Data Data;
     GetAward GetAward;
@@ -10,7 +10,7 @@ public class GetExp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     private void OnCollisionEnter(Collision other)
     {
@@ -23,6 +23,6 @@ public class GetExp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
