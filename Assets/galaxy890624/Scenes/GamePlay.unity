@@ -241,62 +241,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4238514456943022021}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &273413357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273413355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1af6757bb6ba754a8bbb60ca79ca276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "\u6ED1\u9F20\u901F\u5EA6": 1
-  "\u6C34\u5E73\u65CB\u8F49\u7269\u9AD4": {fileID: 4277209}
-  "\u5782\u76F4\u65CB\u8F49\u7269\u9AD4": {fileID: 301365641}
---- !u!114 &273413358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273413355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44891756509df9447ab675455f2e56fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Physics: {fileID: 273413360}
-  Animator: {fileID: 273413359}
-  MoveSpeed: 2
-  MoveAcceleration: 10
-  "\u65B9\u5411\u53C3\u7167\u7269": {fileID: 4277209}
-  "\u73A9\u5BB6\u9762\u5411": {fileID: 180036923}
-  JumpSpeed: 6
-  IsGround: {fileID: 180036922}
-  IsJump:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!95 &273413359 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5042507818885575210, guid: 146f8269a67f14e49a918d628205b43e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4238514456943022021}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &273413360 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 2432288579163384829, guid: 146f8269a67f14e49a918d628205b43e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4238514456943022021}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &301365641 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 17248520302199101, guid: 146f8269a67f14e49a918d628205b43e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4238514456943022021}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,18 +1445,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotKyle
       objectReference: {fileID: 0}
+    - target: {fileID: 8694910130212579385, guid: 146f8269a67f14e49a918d628205b43e,
+        type: 3}
+      propertyPath: IsGround
+      value: 
+      objectReference: {fileID: 180036922}
+    - target: {fileID: 8694910130212579385, guid: 146f8269a67f14e49a918d628205b43e,
+        type: 3}
+      propertyPath: "\u73A9\u5BB6\u9762\u5411"
+      value: 
+      objectReference: {fileID: 180036923}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4435032780808315619, guid: 146f8269a67f14e49a918d628205b43e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 273413358}
-    - targetCorrespondingSourceObject: {fileID: 4435032780808315619, guid: 146f8269a67f14e49a918d628205b43e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 273413357}
     - targetCorrespondingSourceObject: {fileID: 8482086756151634888, guid: 146f8269a67f14e49a918d628205b43e,
         type: 3}
       insertIndex: -1
