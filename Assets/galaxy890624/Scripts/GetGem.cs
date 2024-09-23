@@ -18,6 +18,7 @@ public class GetGem : MonoBehaviour
         if (other.gameObject.name == "RobotKyle")
         {
             Data.Exp += GetAward.GetExp;
+            Destroy(gameObject);
         }
     }
     // Update is called once per frame
