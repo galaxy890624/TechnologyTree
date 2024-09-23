@@ -723,6 +723,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 607512057767707895, guid: 2708e7d52d5cbcf4e9f8e283409c2c6c,
+        type: 3}
+      propertyPath: Data
+      value: 
+      objectReference: {fileID: 11400000, guid: f64218c3ecf915d419214e9509358d7e,
+        type: 2}
+    - target: {fileID: 607512057767707895, guid: 2708e7d52d5cbcf4e9f8e283409c2c6c,
+        type: 3}
+      propertyPath: GetAward
+      value: 
+      objectReference: {fileID: 11400000, guid: 33dd68d960cc32c42aa03bc2ef677857,
+        type: 2}
     - target: {fileID: 714824606717802101, guid: 2708e7d52d5cbcf4e9f8e283409c2c6c,
         type: 3}
       propertyPath: m_Name

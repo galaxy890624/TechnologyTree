@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GetGem : MonoBehaviour
 {
-    Data Data;
-    GetAward GetAward;
+    public Data Data; // 前面一定要+public才可以拉ScriptableObject
+    public GetAward GetAward;
 
     // Start is called before the first frame update
     void Start()
