@@ -23,6 +23,6 @@ public class PlayerUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SpdText.text = Player.GetComponent<ThirdPersonController>().MoveSpeed.ToString("N0");
+        SpdText.text = " Spd = " + Player.GetComponent<ThirdPersonController>().MoveSpeed.ToString("N0");
     }
 }
