@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 82660868}
   - component: {fileID: 82660867}
   m_Layer: 5
-  m_Name: SkillImage3
+  m_Name: SkillImage0Lv1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 358037617}
   - component: {fileID: 358037616}
   m_Layer: 5
-  m_Name: SkillImage0
+  m_Name: SkillImage0Lv0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
