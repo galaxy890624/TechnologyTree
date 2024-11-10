@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// 1.技能解鎖
-/// 2.
+/// 2.SkillIndex的數字用廣度優先的層序
 /// </summary>
 [CreateAssetMenu(fileName = "TreeNode", menuName = "Skill Data/new TreeNode")]
 public class TreeNode : ScriptableObject

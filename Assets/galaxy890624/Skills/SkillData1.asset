@@ -15,6 +15,8 @@ MonoBehaviour:
   SkillIndex: 1
   SkillName: "\u751F\u547D\u63D0\u5347"
   Lv: 0
-  SkillValues: []
-  RequireLevels: 
-  RequireExps: 
+  SkillValues:
+  - 600
+  - 720
+  RequireLevels: 0000000000000000
+  RequireExps: 0000000000000000
