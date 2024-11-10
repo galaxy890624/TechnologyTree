@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 341912baf5832a54bb820a03acc2226a, type: 3}
-  m_Name: SkillData0
+  m_Name: SkillData1
   m_EditorClassIdentifier: 
-  SkillIndex: 0
-  SkillName: "\u901F\u5EA6\u63D0\u5347"
+  SkillIndex: 1
+  SkillName: "\u751F\u547D\u63D0\u5347"
   Lv: 0
-  SkillValues:
-  - 2
-  - 2.2
-  - 2.42
-  RequireLevels: 00000000
-  RequireExps: 00000000
+  SkillValues: []
+  RequireLevels: 
+  RequireExps: 

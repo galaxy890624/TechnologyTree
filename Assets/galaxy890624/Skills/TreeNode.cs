@@ -9,7 +9,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TreeNode", menuName = "Skill Data/new TreeNode")]
 public class TreeNode : ScriptableObject
 {
-    public int SkillIndex;
+    public int SkillIndex; // Current Skill Index
     public SkillData SkillData;
     public SkillData[] UnlockSkill;
 }
