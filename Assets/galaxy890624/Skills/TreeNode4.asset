@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681f6383cd6ac5249a91201df2d6036e, type: 3}
   m_Name: TreeNode4
   m_EditorClassIdentifier: 
-  SkillIndex: 3
-  SkillData: {fileID: 11400000, guid: e14e384c3f5034a4e8f02f0c4358505b, type: 2}
+  SkillIndex: 4
+  SkillData: {fileID: 11400000, guid: 799e57100d690ee40834ba89f9a6c557, type: 2}
   UnlockSkill: []

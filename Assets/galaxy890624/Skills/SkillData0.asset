@@ -21,3 +21,7 @@ MonoBehaviour:
   - 2.42
   RequireLevels: 000000000100000003000000
   RequireExps: 000000000000000000000000
+  SkillInfos:
+  - "\u63D0\u5347\u901F\u5EA6 2.000"
+  - "\u63D0\u5347\u901F\u5EA6 2.200"
+  - "\u63D0\u5347\u901F\u5EA6 2.420"

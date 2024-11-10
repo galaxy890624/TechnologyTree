@@ -20,3 +20,6 @@ MonoBehaviour:
   - 720
   RequireLevels: 0000000000000000
   RequireExps: 0000000000000000
+  SkillInfos:
+  - "\u751F\u547D 600"
+  - "\u751F\u547D 720"

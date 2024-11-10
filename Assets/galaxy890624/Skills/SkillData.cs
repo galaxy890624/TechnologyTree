@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// 玩家的技能資料
@@ -20,15 +21,17 @@ public class SkillData : ScriptableObject
     public int[] RequireLevels = null;
     [Header("技能每個等級的所需經驗值")]
     public int[] RequireExps = null;
-
+    [Header("技能每個等級的描述")]
+    [TextArea] // 可換行
+    public string[] SkillInfos;
     // Lambda 運算子 (簡寫)
     // Lambda 符號後可以運算或寫程式
 
     /// <summary>
     /// 目前技能的能力值
     /// </summary>
-    public float SkillValue => SkillValues[Lv - 1]; // 注意SkillValue 和 SkillValues[] 的差別
-    public float RequireLevel => RequireLevels[Lv - 1];
-    public float RequireExp => RequireExps[Lv - 1];
-
+    public float SkillValue => SkillValues[Lv]; // 注意SkillValue 和 SkillValues[] 的差別
+    public float RequireLevel => RequireLevels[Lv];
+    public float RequireExp => RequireExps[Lv];
+    public string SkillInfo => SkillInfos[Lv];
 }
