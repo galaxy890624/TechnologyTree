@@ -436,6 +436,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 602ad012928e14f4caf10753e34744d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkillData: {fileID: 0}
+  SkillImage: {fileID: 0}
+  SkillImagePosition: {fileID: 0}
+  SkillMessageBox: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class SimpleMonster : AYEMonster<SimpleMonsterAIType>
     [SerializeField] LayerMask playerMask;
     [SerializeField] LayerMask blockMask;
     [SerializeField] float 視線距離 = 10f;
-    [SerializeField] float 額外距離 = 5f;
+    //[SerializeField] float 額外距離 = 5f;
     [SerializeField] float 視線角度 = 100f;
     [SerializeField] float 衝向目標時維持鎖定時間 = 0.5f;
     Transform target = null;
