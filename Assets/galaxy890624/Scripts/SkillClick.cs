@@ -29,7 +29,7 @@ public class SkillClick : MonoBehaviour //, IPointerEnterHandler // IPointerEnte
     {
         print($"<color=#ff00ff>產生<color=#00ff00>{SkillMessageBox.name}</color>!</color>");
         // 生成在技能圖示 右邊100px
-        Instantiate(SkillMessageBox, new Vector3(100f, 0f, 0f), Quaternion.identity, Content); // 產生的位置不對
+        Instantiate(SkillMessageBox, this.gameObject.transform.position + new Vector3(100f, 0f, 0f), Quaternion.identity, Content); // 產生的位置不對
     }
 
     // Update is called once per frame
