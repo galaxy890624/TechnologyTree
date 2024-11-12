@@ -26,8 +26,8 @@ public class SkillClick : MonoBehaviour //, IPointerEnterHandler // IPointerEnte
     /// </summary>
     public void ShowSkillMessageBox()
     {
-        print($"<color=ff00ff>產生<color=#00ff00>{SkillMessageBox.name}</color>!</color>");
-        Instantiate(SkillMessageBox, new Vector3(100f, 0f, 0f), Quaternion.identity, SkillImagePosition);
+        print($"<color=#ff00ff>產生<color=#00ff00>{SkillMessageBox.name}</color>!</color>");
+        Instantiate(SkillMessageBox, new Vector3(100f, 0f, 0f), Quaternion.identity, SkillImagePosition); // 產生的位置不對
     }
     /*private void OnMouseEnter()
     {
