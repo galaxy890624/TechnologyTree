@@ -438,7 +438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SkillData: {fileID: 0}
   SkillImage: {fileID: 0}
-  SkillImagePosition: {fileID: 417227422}
+  Content: {fileID: 417227422}
+  SkillImagePosition: {fileID: 0}
   SkillMessageBox: {fileID: 4979856767504676391, guid: 66275064662a78a4d8409d9d1a202ff5,
     type: 3}
 --- !u!1 &330585543
