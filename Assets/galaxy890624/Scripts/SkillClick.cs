@@ -20,17 +20,17 @@ public class SkillClick : MonoBehaviour //, IPointerEnterHandler // IPointerEnte
     // Start is called before the first frame update
     void Start()
     {
-        //SkillImagePosition.position = new Vector3(0f,0f, 0f);
+        
     }
     /// <summary>
     /// 顯示技能說明的框框
     /// </summary>
-    public void ShowSkillMessageBox()
+    public void ShowSkillMessageBox(EventTrigger other)
     {
         print($"<color=#ff00ff>產生<color=#00ff00>{SkillMessageBox.name}</color>!</color>");
-        print($"<color=#ff00ff>this.gameObject.name = <color=#00ff00>{this.gameObject.name}</color>!</color>");
+        print($"<color=#ff00ff>this.gameObject.name = <color=#00ff00>{other.gameObject.name}</color>!</color>"); // Hirearchy > Content > SkillClick
         // 生成在技能圖示 右邊100px
-        Instantiate(SkillMessageBox, this.gameObject.transform.position + new Vector3(100f, 0f, 0f), Quaternion.identity, Content); // 產生的位置不對
+        Instantiate(SkillMessageBox, other.gameObject.transform.position + new Vector3(100f, 0f, 0f), Quaternion.identity, Content); // 產生的位置不對
     }
 
     // Update is called once per frame
