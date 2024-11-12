@@ -12,10 +12,16 @@ public class TechnologyTreeUI : Windows<TechnologyTreeUI>
             if (isOpen)
             {
                 Close();
+                // 遊戲中鎖定滑鼠
+                Cursor.lockState = CursorLockMode.Locked;
+                Time.timeScale = 1f;
             }
             else
             {
                 Open();
+                // 解除鎖定滑鼠
+                Cursor.lockState = CursorLockMode.None;
+                Time.timeScale = 0.001f;
             }
         }
 
