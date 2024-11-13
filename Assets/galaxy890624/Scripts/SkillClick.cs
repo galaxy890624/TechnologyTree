@@ -11,11 +11,11 @@ using UnityEngine.UIElements;
 /// </summary>
 public class SkillClick : MonoBehaviour //, IPointerEnterHandler // IPointerEnterHandler 必須搭配 public void OnPointerEnter(PointerEventData PointerEventData)
 {
-    public SkillData SkillData;
-    public GameObject SkillImage; // 技能圖片
     public Transform Content;
-    public Transform SkillImagePosition; // 技能圖片 的位置
+    //public Transform SkillImagePosition; // 技能圖片 的位置
     public GameObject SkillMessageBox; // 技能說明 的 框框
+    // 用來保存生成的 SkillMessageBox 的實例
+    public GameObject SkillMessageBoxInstance;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +27,8 @@ public class SkillClick : MonoBehaviour //, IPointerEnterHandler // IPointerEnte
     /// </summary>
     public void ShowSkillMessageBox(EventTrigger other)
     {
-        print($"<color=#ff00ff>產生<color=#00ff00>{SkillMessageBox.name}</color>!</color>");
-        print($"<color=#ff00ff>this.gameObject.name = <color=#00ff00>{other.gameObject.name}</color>!</color>"); // Hirearchy > Content > SkillClick
         // 生成在技能圖示 右邊100px
-        Instantiate(SkillMessageBox, other.gameObject.transform.position + new Vector3(100f, 0f, 0f), Quaternion.identity, Content); // 產生的位置不對
+        SkillMessageBoxInstance = Instantiate(SkillMessageBox, other.gameObject.transform.position + new Vector3(100f, 0f, 0f), Quaternion.identity, Content);
     }
 
     // Update is called once per frame

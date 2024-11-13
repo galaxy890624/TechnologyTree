@@ -397,6 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290361312}
   - component: {fileID: 290361313}
+  - component: {fileID: 290361314}
   m_Layer: 5
   m_Name: SkillClick
   m_TagString: Untagged
@@ -436,12 +437,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 602ad012928e14f4caf10753e34744d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkillData: {fileID: 0}
-  SkillImage: {fileID: 0}
   Content: {fileID: 417227422}
-  SkillImagePosition: {fileID: 0}
   SkillMessageBox: {fileID: 4979856767504676391, guid: 66275064662a78a4d8409d9d1a202ff5,
     type: 3}
+--- !u!114 &290361314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290361311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3005e06aa88c45640b5245851b0b1868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +726,22 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 358037618}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.EventSystems.EventTrigger,
               UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361313}
+          m_TargetAssemblyTypeName: SkillClick, Assembly-CSharp
+          m_MethodName: HideSkillMessageBox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
