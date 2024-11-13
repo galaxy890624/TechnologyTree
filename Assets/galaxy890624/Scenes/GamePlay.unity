@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 82660866}
   - component: {fileID: 82660868}
   - component: {fileID: 82660867}
+  - component: {fileID: 82660869}
   m_Layer: 5
   m_Name: SkillImage0Lv1
   m_TagString: Untagged
@@ -294,6 +295,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82660865}
   m_CullTransparentMesh: 1
+--- !u!114 &82660869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82660865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361313}
+          m_TargetAssemblyTypeName: SkillClick, Assembly-CSharp
+          m_MethodName: ShowSkillMessageBox
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 82660869}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.EventSystems.EventTrigger,
+              UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361314}
+          m_TargetAssemblyTypeName: DestroySkillMessageBox, Assembly-CSharp
+          m_MethodName: HideSkillMessageBox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &125191599
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +487,7 @@ MonoBehaviour:
   Content: {fileID: 417227422}
   SkillMessageBox: {fileID: 4979856767504676391, guid: 66275064662a78a4d8409d9d1a202ff5,
     type: 3}
+  SkillMessageBoxInstance: {fileID: 0}
 --- !u!114 &290361314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3005e06aa88c45640b5245851b0b1868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkillMessageBox: {fileID: 0}
+  SkillClick: {fileID: 290361313}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,8 +785,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 290361313}
-          m_TargetAssemblyTypeName: SkillClick, Assembly-CSharp
+        - m_Target: {fileID: 290361314}
+          m_TargetAssemblyTypeName: DestroySkillMessageBox, Assembly-CSharp
           m_MethodName: HideSkillMessageBox
           m_Mode: 1
           m_Arguments:
@@ -919,6 +969,7 @@ GameObject:
   - component: {fileID: 418858179}
   - component: {fileID: 418858181}
   - component: {fileID: 418858180}
+  - component: {fileID: 418858182}
   m_Layer: 5
   m_Name: SkillImage2Lv0
   m_TagString: Untagged
@@ -984,6 +1035,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418858178}
   m_CullTransparentMesh: 1
+--- !u!114 &418858182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418858178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361313}
+          m_TargetAssemblyTypeName: SkillClick, Assembly-CSharp
+          m_MethodName: ShowSkillMessageBox
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 418858182}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.EventSystems.EventTrigger,
+              UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361314}
+          m_TargetAssemblyTypeName: DestroySkillMessageBox, Assembly-CSharp
+          m_MethodName: HideSkillMessageBox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &446587840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,6 +1667,7 @@ GameObject:
   - component: {fileID: 902388768}
   - component: {fileID: 902388770}
   - component: {fileID: 902388769}
+  - component: {fileID: 902388771}
   m_Layer: 5
   m_Name: SkillImage1Lv0
   m_TagString: Untagged
@@ -1635,6 +1733,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902388767}
   m_CullTransparentMesh: 1
+--- !u!114 &902388771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902388767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361313}
+          m_TargetAssemblyTypeName: SkillClick, Assembly-CSharp
+          m_MethodName: ShowSkillMessageBox
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 902388771}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.EventSystems.EventTrigger,
+              UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361314}
+          m_TargetAssemblyTypeName: DestroySkillMessageBox, Assembly-CSharp
+          m_MethodName: HideSkillMessageBox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1048440402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1790,7 @@ GameObject:
   - component: {fileID: 1048440403}
   - component: {fileID: 1048440405}
   - component: {fileID: 1048440404}
+  - component: {fileID: 1048440406}
   m_Layer: 5
   m_Name: SkillImage2Lv1
   m_TagString: Untagged
@@ -1711,6 +1856,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048440402}
   m_CullTransparentMesh: 1
+--- !u!114 &1048440406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048440402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361313}
+          m_TargetAssemblyTypeName: SkillClick, Assembly-CSharp
+          m_MethodName: ShowSkillMessageBox
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1048440406}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.EventSystems.EventTrigger,
+              UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 290361314}
+          m_TargetAssemblyTypeName: DestroySkillMessageBox, Assembly-CSharp
+          m_MethodName: HideSkillMessageBox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1229657144
 GameObject:
   m_ObjectHideFlags: 3
