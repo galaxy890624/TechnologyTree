@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -16,6 +17,8 @@ public class SkillClick : MonoBehaviour //, IPointerEnterHandler // IPointerEnte
     public GameObject SkillMessageBox; // 技能說明 的 框框
     // 用來保存生成的 SkillMessageBox 的實例
     public GameObject SkillMessageBoxInstance;
+    // 技能描述 的 文字
+    public TextMeshProUGUI SkillInfoText;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,7 @@ public class SkillClick : MonoBehaviour //, IPointerEnterHandler // IPointerEnte
     /// </summary>
     public void ShowSkillMessageBox(EventTrigger other)
     {
+        print($"<color=#ff00ff>other = <color=#00ff00>{other.gameObject.name}</color>!</color>");
         // 生成在技能圖示 右邊100px
         SkillMessageBoxInstance = Instantiate(SkillMessageBox, other.gameObject.transform.position + new Vector3(100f, 0f, 0f), Quaternion.identity, Content);
     }

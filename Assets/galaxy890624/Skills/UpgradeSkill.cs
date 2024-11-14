@@ -18,20 +18,19 @@ namespace galaxy890624
             
         }
         /// <summary>
-        /// 解鎖技能之後 發生的事情
-        /// 1.技能等級升級
-        /// 2.解鎖 TreeNode.UnlockSkill<Array>
+        /// 可被解鎖的技能
         /// </summary>
-        void CanUnlockSkill()
+        void CanUnlockSkill() // 搭配Button
         {
             // 符合全部的條件 才可以解鎖技能
             if ( Data.Level >= SkillData.RequireLevel && Data.Exp >= SkillData.RequireExp )
             {
+                // 技能升級
                 SkillData.Lv++;
                 // animation
                 // sound
+                
             }
-
         }
         // Update is called once per frame
         void Update()
