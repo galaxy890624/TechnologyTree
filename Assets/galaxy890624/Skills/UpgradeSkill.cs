@@ -20,16 +20,21 @@ namespace galaxy890624
         /// <summary>
         /// 可被解鎖的技能
         /// </summary>
-        void CanUnlockSkill() // 搭配Button
+        public void CanUnlockSkill() // 搭配Button
         {
             // 符合全部的條件 才可以解鎖技能
             if ( Data.Level >= SkillData.RequireLevel && Data.Exp >= SkillData.RequireExp )
             {
                 // 技能升級
                 SkillData.Lv++;
+                
                 // animation
                 // sound
-                
+
+            }
+            else
+            {
+                print("<color=#ff00ff>還沒辦法升級!</color>");
             }
         }
         // Update is called once per frame
