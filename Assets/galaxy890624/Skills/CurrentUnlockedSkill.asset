@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b42fa2bb3372944a7a7c6146acca40, type: 3}
   m_Name: CurrentUnlockedSkill
   m_EditorClassIdentifier: 
-  CanUnlockedSkill:
-  - {fileID: 0}
+  CanUnlockedSkill: []
   UnlockedTreeNode: []

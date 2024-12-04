@@ -843,13 +843,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1272195995}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1272195997}
+        m_TargetAssemblyTypeName: galaxy890624.UpgradeSkill, Assembly-CSharp
+        m_MethodName: CanUnlockSkill
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2109,7 +2109,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SkillData: {fileID: 0}
   TreeNode: {fileID: 0}
+  SkillDataList:
+  - {fileID: 11400000, guid: e14e384c3f5034a4e8f02f0c4358505b, type: 2}
+  - {fileID: 11400000, guid: 428b82da90629e346b3e12c306300ef4, type: 2}
+  - {fileID: 11400000, guid: 799e57100d690ee40834ba89f9a6c557, type: 2}
+  TreeNodeList:
+  - {fileID: 11400000, guid: 5c72ef140b87509468c25dd0e3436870, type: 2}
+  - {fileID: 11400000, guid: d443a89f6fc59464bb5527e9bda0941f, type: 2}
+  - {fileID: 11400000, guid: 509848411ebb1254a8491761f8a25ee6, type: 2}
+  - {fileID: 11400000, guid: ff2899b614a072d41ad8368e612faeae, type: 2}
+  - {fileID: 11400000, guid: 4636999f0af5fcd4aae147d6ae329c7c, type: 2}
   Data: {fileID: 0}
+  CurrentUnlockedSkill: {fileID: 0}
 --- !u!1 &1394894630
 GameObject:
   m_ObjectHideFlags: 0

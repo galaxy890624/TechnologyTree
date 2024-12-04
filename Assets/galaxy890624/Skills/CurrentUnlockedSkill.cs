@@ -9,6 +9,6 @@ public class CurrentUnlockedSkill : ScriptableObject
 {
     [Header("CurrentUnlockedSkill")] // 目前可以升級的技能
     public SkillData[] CanUnlockedSkill;
-    
+    [Header("")]
     public TreeNode[] UnlockedTreeNode;
 }

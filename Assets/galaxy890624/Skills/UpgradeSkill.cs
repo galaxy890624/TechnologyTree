@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 namespace galaxy890624
 {
@@ -10,8 +12,22 @@ namespace galaxy890624
     {
         public SkillData SkillData;
         public TreeNode TreeNode;
+        public SkillData[] SkillDataList;
+        public TreeNode[] TreeNodeList; 
         public Data Data;
+        /// <summary>
+        /// CurrentUnlockedSkill
+        /// 1.public SkillData[] CanUnlockedSkill;
+        /// 2.public TreeNode[] UnlockedTreeNode;
+        /// </summary>
+        public CurrentUnlockedSkill CurrentUnlockedSkill;
 
+        // Initialize
+        private void Awake()
+        {
+            // 一開始解鎖0號技能
+            CurrentUnlockedSkill.CanUnlockedSkill.Append<ScriptableObject>(SkillDataList[0]);
+        }
         // Start is called before the first frame update
         void Start()
         {
