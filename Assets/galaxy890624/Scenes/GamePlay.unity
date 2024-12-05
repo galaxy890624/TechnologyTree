@@ -2109,11 +2109,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SkillData: {fileID: 0}
   TreeNode: {fileID: 0}
-  SkillDataList:
+  SkillDataSet:
   - {fileID: 11400000, guid: e14e384c3f5034a4e8f02f0c4358505b, type: 2}
   - {fileID: 11400000, guid: 428b82da90629e346b3e12c306300ef4, type: 2}
   - {fileID: 11400000, guid: 799e57100d690ee40834ba89f9a6c557, type: 2}
-  TreeNodeList:
+  TreeNodeSet:
   - {fileID: 11400000, guid: 5c72ef140b87509468c25dd0e3436870, type: 2}
   - {fileID: 11400000, guid: d443a89f6fc59464bb5527e9bda0941f, type: 2}
   - {fileID: 11400000, guid: 509848411ebb1254a8491761f8a25ee6, type: 2}

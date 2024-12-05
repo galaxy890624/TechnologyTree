@@ -12,8 +12,8 @@ namespace galaxy890624
     {
         public SkillData SkillData;
         public TreeNode TreeNode;
-        public SkillData[] SkillDataList;
-        public TreeNode[] TreeNodeList; 
+        public SkillData[] SkillDataSet;
+        public TreeNode[] TreeNodeSet; 
         public Data Data;
         /// <summary>
         /// CurrentUnlockedSkill
@@ -25,8 +25,12 @@ namespace galaxy890624
         // Initialize
         private void Awake()
         {
-            // 一開始解鎖0號技能
-            CurrentUnlockedSkill.CanUnlockedSkill.Append<ScriptableObject>(SkillDataList[0]);
+            SkillData = SkillDataSet[0];
+            TreeNode = TreeNodeSet[0];
+            for(int i = 0; i < TreeNode.UnlockSkill.Length; i++)
+            {
+                ;
+            }
         }
         // Start is called before the first frame update
         void Start()
