@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341912baf5832a54bb820a03acc2226a, type: 3}
+  m_Name: SkillData 1
+  m_EditorClassIdentifier: 
+  SkillIndex: 1
+  SkillName: "\u6700\u5927\u751F\u547D\u63D0\u5347 Lv 1"
+  SkillLevel: 1
+  SkillValue: 110
+  SkillInfo: "\u6700\u5927\u751F\u547D 100 \u2192 110"
+  IsUnlocked: 0
+  PreSkills:
+  - {fileID: 11400000, guid: ec67629398cce5c46a2ae64817ec13b2, type: 2}
