@@ -15,7 +15,8 @@ namespace galaxy890624
         public SkillData SkillData;
         public void OnPointerClick(PointerEventData eventData)
         {
-            SkillManager.Instance.ActivateSkill = SkillData;
+            SkillManager.Instance.ActivateSkill = SkillData; // 調用
+            SkillManager.Instance.DisplaySkillInfo();
         }
     }
 }
