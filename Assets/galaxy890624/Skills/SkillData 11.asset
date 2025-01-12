@@ -30,3 +30,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 61fd8869cb0f8f74db490b7af34b9382, type: 2}
   - {fileID: 11400000, guid: 27af29b19d9f4d94abf45adb521c9cb5, type: 2}
   - {fileID: 11400000, guid: 351ad6b4ead1edf4b95f27bda05c4743, type: 2}
+  RequireLevel: 0
+  CostExp: 0

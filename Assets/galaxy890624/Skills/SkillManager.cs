@@ -46,22 +46,29 @@ namespace galaxy890624
             // 如果什麼按鈕都不點,就直接按下升級按鈕,會回傳錯誤訊息
             if (ActivateSkill == null)
             {
-                return; // 不做任何事
+                print("<color=#ff00ff>未選擇任何技能,無法升級!</color>");
+                return;
             }
 
-            // 解鎖條件
-            if (Data.Level >= ActivateSkill.RequireLevel && Data.Exp >= ActivateSkill.CostExp)
+            // 確保玩家等級和經驗滿足基本需求
+            if (Data.Level < ActivateSkill.RequireLevel || Data.Exp < ActivateSkill.CostExp)
             {
-                UpgradeSkill();
+                print("<color=#ff00ff>等級或經驗不足,無法升級技能!</color>");
+                return;
             }
-            // 當 所有的 ActivateSkill.SkillIndex == true時 才解鎖
-            for (int i = 0; i < ActivateSkill.PreSkills.Length; i++)
+
+            // 檢查所有前置技能是否都已解鎖
+            foreach (SkillData preSkill in ActivateSkill.PreSkills)
             {
-                if(ActivateSkill.PreSkills[i].IsUnlocked == true)
+                if (!preSkill.IsUnlocked)
                 {
-
+                    print($"<color=#ff00ff>前置技能 <color=#00ff00>{preSkill.SkillName}</color> 未解鎖，無法升級技能!</color>");
+                    return;
                 }
             }
+
+            // 若所有條件都符合，執行升級
+            UpgradeSkill();
         }
         private void UpgradeSkill()
         {
@@ -93,4 +100,3 @@ namespace galaxy890624
         }
     }
 }
-

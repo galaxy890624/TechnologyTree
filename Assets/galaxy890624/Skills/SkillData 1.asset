@@ -20,3 +20,5 @@ MonoBehaviour:
   IsUnlocked: 0
   PreSkills:
   - {fileID: 11400000, guid: ec67629398cce5c46a2ae64817ec13b2, type: 2}
+  RequireLevel: 0
+  CostExp: 0

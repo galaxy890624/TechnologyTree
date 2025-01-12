@@ -10,9 +10,9 @@ using UnityEngine;
 public class Data : ScriptableObject
 {
     [Header("玩家等級")]
-    public int Level = 0;
+    public int Level;
     [Header("玩家經驗值")]
-    public float Exp = 0;
+    public float Exp;
     [Header("升到下個等級的經驗值")]
     public float MaxExp= 0;
 }

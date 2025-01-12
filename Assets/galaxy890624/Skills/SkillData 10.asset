@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e72d78290490e804da50bbe33f0d4af8, type: 2}
   - {fileID: 11400000, guid: 740bb6dd9001f37488aa8dc5919bffdf, type: 2}
   - {fileID: 11400000, guid: 18727461f28ea764095f2b205be55f3b, type: 2}
+  RequireLevel: 0
+  CostExp: 0
