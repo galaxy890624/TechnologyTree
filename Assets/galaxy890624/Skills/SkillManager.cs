@@ -43,17 +43,16 @@ namespace galaxy890624
         public void UpgradeButton()
         {
             // 解鎖條件
-            //  if (Data.Level >= ActivateSkill.RequireLevel && Data.Exp >= ActivateSkill.CostExp && ActivateSkill.PreSkills.Length == 0)
-            if (ActivateSkill.PreSkills.Length == 0)
+            if (Data.Level >= ActivateSkill.RequireLevel && Data.Exp >= ActivateSkill.CostExp && ActivateSkill.PreSkills.Length == 0)
             {
                 // 把顏色改回亮的顏色(白色)
                 SkillButtons[ActivateSkill.SkillIndex].GetComponent<UnityEngine.UI.Image>().color = Color.white;
                 // 扣除 對應的經驗
-                //Data.Exp -= ActivateSkill.CostExp;
+                Data.Exp -= ActivateSkill.CostExp;
                 // 更新技能資訊
                 DisplaySkillInfo();
                 // 完成解鎖
-                //ActivateSkill.IsUnlocked = true;
+                ActivateSkill.IsUnlocked = true;
             }
         }
         public void DisplaySkillInfo()
