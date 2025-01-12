@@ -42,6 +42,12 @@ namespace galaxy890624
         }
         public void UpgradeButton()
         {
+            // 如果什麼按鈕都不點,就直接按下升級按鈕,會回傳錯誤訊息
+            if (ActivateSkill == null)
+            {
+                return; // 不做任何事
+            }
+
             // 解鎖條件
             if (Data.Level >= ActivateSkill.RequireLevel && Data.Exp >= ActivateSkill.CostExp && ActivateSkill.PreSkills.Length == 0)
             {
