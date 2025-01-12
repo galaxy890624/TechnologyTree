@@ -27,4 +27,8 @@ public class SkillData : ScriptableObject
     public bool IsUnlocked;
     [Header("解鎖的條件")]
     public SkillData[] PreSkills;
+    [Header("解鎖需要的等級")]
+    public int RequireLevel;
+    [Header("解鎖消耗的經驗值")]
+    public int CostExp;
 }

@@ -20,6 +20,11 @@ namespace galaxy890624
         public TextMeshProUGUI SkillNameText; // 技能名稱文字
         public TextMeshProUGUI SkillInfoText; // 技能資訊文字
 
+        public SkillButton[] SkillButtons;
+
+        [Header("PlayerData")]
+        public Data Data;
+
         private void Awake()
         {
             if (Instance == null)
@@ -35,7 +40,22 @@ namespace galaxy890624
             }
             DontDestroyOnLoad(gameObject);
         }
-
+        public void UpgradeButton()
+        {
+            // 解鎖條件
+            //  if (Data.Level >= ActivateSkill.RequireLevel && Data.Exp >= ActivateSkill.CostExp && ActivateSkill.PreSkills.Length == 0)
+            if (ActivateSkill.PreSkills.Length == 0)
+            {
+                // 把顏色改回亮的顏色(白色)
+                SkillButtons[ActivateSkill.SkillIndex].GetComponent<UnityEngine.UI.Image>().color = Color.white;
+                // 扣除 對應的經驗
+                //Data.Exp -= ActivateSkill.CostExp;
+                // 更新技能資訊
+                DisplaySkillInfo();
+                // 完成解鎖
+                //ActivateSkill.IsUnlocked = true;
+            }
+        }
         public void DisplaySkillInfo()
         {
             // SkillImage.sprite = ActivateSkill.skillSprite;
