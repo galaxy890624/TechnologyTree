@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 namespace galaxy890624
 {
@@ -49,17 +50,29 @@ namespace galaxy890624
             }
 
             // 解鎖條件
-            if (Data.Level >= ActivateSkill.RequireLevel && Data.Exp >= ActivateSkill.CostExp && ActivateSkill.PreSkills.Length == 0)
+            if (Data.Level >= ActivateSkill.RequireLevel && Data.Exp >= ActivateSkill.CostExp)
             {
-                // 把顏色改回亮的顏色(白色)
-                SkillButtons[ActivateSkill.SkillIndex].GetComponent<UnityEngine.UI.Image>().color = Color.white;
-                // 扣除 對應的經驗
-                Data.Exp -= ActivateSkill.CostExp;
-                // 更新技能資訊
-                DisplaySkillInfo();
-                // 完成解鎖
-                ActivateSkill.IsUnlocked = true;
+                UpgradeSkill();
             }
+            // 當 所有的 ActivateSkill.SkillIndex == true時 才解鎖
+            for (int i = 0; i < ActivateSkill.PreSkills.Length; i++)
+            {
+                if(ActivateSkill.PreSkills[i].IsUnlocked == true)
+                {
+
+                }
+            }
+        }
+        private void UpgradeSkill()
+        {
+            // 把顏色改回亮的顏色(白色)
+            SkillButtons[ActivateSkill.SkillIndex].GetComponent<UnityEngine.UI.Image>().color = Color.white;
+            // 扣除 對應的經驗
+            Data.Exp -= ActivateSkill.CostExp;
+            // 更新技能資訊
+            DisplaySkillInfo();
+            // 完成解鎖
+            ActivateSkill.IsUnlocked = true;
         }
         public void DisplaySkillInfo()
         {
