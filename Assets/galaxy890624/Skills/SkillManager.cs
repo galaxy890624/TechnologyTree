@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
+using StarterAssets;
 
 namespace galaxy890624
 {
@@ -25,6 +26,7 @@ namespace galaxy890624
 
         [Header("PlayerData")]
         public Data Data;
+        public GameObject Player;
 
         private void Awake()
         {
