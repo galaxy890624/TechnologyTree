@@ -18,7 +18,7 @@ MonoBehaviour:
   SkillLevel: 0
   SkillValue: 2
   SkillInfo: "\u7DA0\u5BF6\u77F3\u63A1\u96C6\u6578\u91CF 1 \u2192 2"
-  IsUnlocked: 0
+  IsUnlocked: 1
   PreSkills:
   - {fileID: 11400000, guid: ec67629398cce5c46a2ae64817ec13b2, type: 2}
   RequireLevel: 0

@@ -30,7 +30,13 @@ namespace galaxy890624
 
         [Header("GetAward 必須按照寶石等級排序")]
         public GetAward[] GetAwardDatas;
-        
+
+        [Header("升級成功的音效")]
+        public AudioSource UpgradeSuccessfulSound;
+
+        [Header("升級失敗的音效")]
+        public AudioSource UpgradeFailedSound;
+
         /// <summary>
         /// Design pattern - 單例模式 Singleton
         /// </summary>
@@ -55,6 +61,8 @@ namespace galaxy890624
             if (ActivateSkill == null)
             {
                 print("<color=#ff00ff>未選擇任何技能,無法升級!</color>");
+                // 播放 升級失敗 的 音效
+                UpgradeFailedSound.Play();
                 return;
             }
 
@@ -62,6 +70,8 @@ namespace galaxy890624
             if (Data.Level < ActivateSkill.RequireLevel || Data.Exp < ActivateSkill.CostExp)
             {
                 print("<color=#ff00ff>等級或經驗不足,無法升級技能!</color>");
+                // 播放 升級失敗 的 音效
+                UpgradeFailedSound.Play();
                 return;
             }
 
@@ -71,6 +81,8 @@ namespace galaxy890624
                 if (!preSkill.IsUnlocked)
                 {
                     print($"<color=#ff00ff>前置技能 <color=#00ff00>{preSkill.SkillName}</color> 未解鎖，無法升級技能!</color>");
+                    // 播放 升級失敗 的 音效
+                    UpgradeFailedSound.Play();
                     return;
                 }
             }
@@ -80,6 +92,9 @@ namespace galaxy890624
         }
         private void UpgradeSkill()
         {
+            // 撥放 升級成功 的 音效
+            UpgradeSuccessfulSound.Play();
+
             // 如果 SkillData.SkillName 找到 "速度" 
             if (ActivateSkill.SkillName.Contains("速度"))
             {
