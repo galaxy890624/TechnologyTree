@@ -74,6 +74,16 @@ namespace galaxy890624
         }
         private void UpgradeSkill()
         {
+            // 如果 SkillData.SkillName 找到 "速度" 
+            if (ActivateSkill.SkillName.Contains("速度"))
+            {
+                print($"<color=#ff00ff>我找到<color=#00ff00>{ActivateSkill.SkillName}</color>了!</color>");
+                Player.GetComponent<ThirdPersonController>().MoveSpeed = ActivateSkill.SkillValue;
+            }
+            if (ActivateSkill.SkillName.Contains("生命"))
+            {
+                print($"<color=#ff00ff>我找到<color=#00ff00>{ActivateSkill.SkillName}</color>了!</color>");
+            }
             // 把顏色改回亮的顏色(白色)
             SkillButtons[ActivateSkill.SkillIndex].GetComponent<UnityEngine.UI.Image>().color = Color.white;
             // 扣除 對應的經驗

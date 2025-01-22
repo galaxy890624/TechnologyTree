@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: SkillData 1
   m_EditorClassIdentifier: 
   SkillIndex: 1
+  SkillSprite: {fileID: 21300000, guid: b73c68789259244c79e641e341229e56, type: 3}
   SkillName: "\u6700\u5927\u751F\u547D\u63D0\u5347 Lv 1"
   SkillLevel: 1
   SkillValue: 110
   SkillInfo: "\u6700\u5927\u751F\u547D 100 \u2192 110"
-  IsUnlocked: 0
+  IsUnlocked: 1
   PreSkills:
   - {fileID: 11400000, guid: ec67629398cce5c46a2ae64817ec13b2, type: 2}
   RequireLevel: 0

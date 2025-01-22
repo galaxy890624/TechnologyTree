@@ -14,5 +14,9 @@ public class Data : ScriptableObject
     [Header("玩家經驗值")]
     public float Exp;
     [Header("升到下個等級的經驗值")]
-    public float MaxExp= 0;
+    public float MaxExp = 0;
+    [Header("玩家當前血量")]
+    public float HP;
+    [Header("玩家最大血量")]
+    public float MaxHP;
 }

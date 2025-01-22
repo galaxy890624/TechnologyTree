@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SkillData 6
   m_EditorClassIdentifier: 
   SkillIndex: 6
+  SkillSprite: {fileID: 21300000, guid: bea486e7d2e82441185ffb578129701f, type: 3}
   SkillName: "\u7D2B\u5BF6\u77F3\u63A1\u96C6\u63D0\u5347 Lv 1"
   SkillLevel: 1
   SkillValue: 8

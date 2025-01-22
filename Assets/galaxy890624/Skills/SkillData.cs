@@ -13,7 +13,7 @@ public class SkillData : ScriptableObject
     [Header("技能索引值")]
     public int SkillIndex;
     [Header("技能的顯示圖片")]
-    Sprite SkillSprite;
+    public Sprite SkillSprite;
     [Header("技能名稱")]
     public string SkillName;
     [Header("技能等級"), Range(0, 500)]
