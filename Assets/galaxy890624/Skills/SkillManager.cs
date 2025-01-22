@@ -28,6 +28,12 @@ namespace galaxy890624
         public Data Data;
         public GameObject Player;
 
+        [Header("GetAward 必須按照寶石等級排序")]
+        public GetAward[] GetAwardDatas;
+        
+        /// <summary>
+        /// Design pattern - 單例模式 Singleton
+        /// </summary>
         private void Awake()
         {
             if (Instance == null)
@@ -83,6 +89,22 @@ namespace galaxy890624
             if (ActivateSkill.SkillName.Contains("生命"))
             {
                 print($"<color=#ff00ff>我找到<color=#00ff00>{ActivateSkill.SkillName}</color>了!</color>");
+                Data.MaxHP = ActivateSkill.SkillValue;
+            }
+            if (ActivateSkill.SkillName.Contains("綠寶石"))
+            {
+                print($"<color=#ff00ff>我找到<color=#00ff00>{ActivateSkill.SkillName}</color>了!</color>");
+                GetAwardDatas[0].GetExp = ActivateSkill.SkillValue;
+            }
+            if (ActivateSkill.SkillName.Contains("藍寶石"))
+            {
+                print($"<color=#ff00ff>我找到<color=#00ff00>{ActivateSkill.SkillName}</color>了!</color>");
+                GetAwardDatas[1].GetExp = ActivateSkill.SkillValue;
+            }
+            if (ActivateSkill.SkillName.Contains("紫寶石"))
+            {
+                print($"<color=#ff00ff>我找到<color=#00ff00>{ActivateSkill.SkillName}</color>了!</color>");
+                GetAwardDatas[2].GetExp = ActivateSkill.SkillValue;
             }
             // 把顏色改回亮的顏色(白色)
             SkillButtons[ActivateSkill.SkillIndex].GetComponent<UnityEngine.UI.Image>().color = Color.white;

@@ -3955,6 +3955,10 @@ MonoBehaviour:
   - {fileID: 1898024768}
   Data: {fileID: 11400000, guid: f64218c3ecf915d419214e9509358d7e, type: 2}
   Player: {fileID: 273413355}
+  GetAwardDatas:
+  - {fileID: 11400000, guid: 33dd68d960cc32c42aa03bc2ef677857, type: 2}
+  - {fileID: 11400000, guid: 7b16a658a38c9224e9346cbd549ec4d6, type: 2}
+  - {fileID: 11400000, guid: ea689356a7b27964780e1bf19bb38713, type: 2}
 --- !u!4 &1446242320
 Transform:
   m_ObjectHideFlags: 0
