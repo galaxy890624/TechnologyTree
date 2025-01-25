@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10bf06cd857b6b046b7f5f847d665dee, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  Level: 0
-  Exp: 907
-  MaxExp: 400
+  Level: 2
+  Exp: 15
+  MaxExp: 676
+  HP: 100
+  MaxHP: 100

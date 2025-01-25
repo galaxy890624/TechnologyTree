@@ -2212,6 +2212,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkillData: {fileID: 11400000, guid: 740bb6dd9001f37488aa8dc5919bffdf, type: 2}
+--- !u!1 &721902740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721902741}
+  - component: {fileID: 721902742}
+  m_Layer: 5
+  m_Name: HpTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &721902741
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721902740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1750308504}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &721902742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721902740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6a17e55c1832c40be7fdf5c4d7f69e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerData: {fileID: 11400000, guid: f64218c3ecf915d419214e9509358d7e, type: 2}
 --- !u!1 &735421298
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +5453,7 @@ RectTransform:
   - {fileID: 937265792}
   - {fileID: 769962124}
   - {fileID: 20938516}
+  - {fileID: 721902741}
   m_Father: {fileID: 1627495594}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5461,8 +5512,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 636638028fdf27646ac81f517eb390e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerData: {fileID: 11400000, guid: f64218c3ecf915d419214e9509358d7e, type: 2}
   CurrentHPImage: {fileID: 1704753875}
   HurtedHPImage: {fileID: 908096162}
+  HPText: {fileID: 769962125}
 --- !u!1 &1756111693
 GameObject:
   m_ObjectHideFlags: 0
